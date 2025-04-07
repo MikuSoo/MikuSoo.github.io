@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+@font-face 
+{
+  font-family: "Lostar";
+  src:
+    url("REF/Lostar.ttf")  format("ttf");
+}
 
 *{
     margin: 0;
@@ -10,7 +16,28 @@
 
 }
 
-nav {margin: 5px;}
+a:link { 
+    text-decoration: none; 
+} 
+a:visited { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none;
+    color: #8DF1F8;
+} 
+a:active { 
+    text-decoration: none;
+    color: #8DF1F8;
+
+}
+/*---------------NAVBAR---------------*/  
+nav {
+    margin: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
 
 nav ul {
     display: flex;
@@ -24,8 +51,78 @@ nav ul li {
     margin-left: 10px;
 }
 
-h1 {
-    flex-grow: 1;
-    margin-left: 0px;
+/*---------------APRESENTATION---------------*/
+#HiWorld{
+    margin-left: 40px;
+    margin-right: 40px;
+
+
+    line-height: 110px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+   
 }
 
+h1{
+    font-size: 1.25rem;
+    flex-grow: 1;
+
+}
+
+.local{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+section h1 {
+    flex-grow: 1;
+    align-items: flex-start;
+    font-size: 8rem;
+}
+
+section h2{
+    font-size: 3rem;
+}
+
+.hello{
+    font-family:"Lostar"; 
+    background: -webkit-linear-gradient( #8DF1F8,#538E92);
+    background-clip: text;
+    color: transparent;
+
+    font-size: 8rem;
+}
+
+.areas li{
+    display: inline;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    list-style-type: none;
+
+    border-top: #8DF1F8 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+
+    font-size: 1.5rem;
+}
+
+#view{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
