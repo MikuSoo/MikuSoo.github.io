@@ -15,55 +15,44 @@
 <body>
     <header>
         <nav>
-            
             <ul>
                 <h1><a href="index.html" target="_self">Carina Serra</a></h1>
-
                 <li><a href="work.html" target="_self">Work</a></li>
                 <li><a href="about.html" target="_self">About</a></li>
                 <li><a href="contact.html" target="_self">Contact</a></li>
-
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="HiWorld">
-            <div>
-                <h3 class="local"><img src="REF/iconlocal.png">Portugal</h3>
-                <h1 class="hello">Hello</h1>
-                <h2>I'm Carina Serra.</h2>
-
-                <div class="areas">
-                    <li>WebDesign</li>
-                    <li>UX/UI</li>
-                    <li>Graphic Design</li>
-                </div>
-            </div>
-
-            <img src="REF/background.png" alt="LOGO WATERMARK" />
+            <div><img src="REF/iconlocal.png"><p>Portugal</p></div>
+            <h1>Hello</h1>
+            <h2>I'm Carina Serra.</h2>
+            <ul>
+                <li>WebDesign</li>
+                <li>UX/UI</li>
+                <li>Graphic Design</li>
+            </ul>
         </section>
 
-        <section id="view">
+        <div id="btn_scroll_works">
             <p>view project's</p>
-            <a href="#works" class="scroll-down" id="scrollDownBtn" address="true"></a>
-        </section>
+            <a href="#works" id="scroll-down"></a>
+        </div>
 
-        <section class="projects" id="works">
-            <div class="title-container">
+        <section id="works">
+            <div id="title-works">
                 <h2>this is my work</h2>
-                <p><a href="work.html" target="_self">view more</a></p>
+                <a href="work.html" target="_self">view more</a>
             </div>
-            <section class="grid-container">
-                <div class="card card-1"></div>
-                <div class="card card-2"></div>
-                <div class="card card-3"></div>
-                <div class="card card-4"></div>
-            </section>
-
+            <div id="grid-works">
+                <a class="card" id="card-1" href="projects/project1/project1.html"></a>
+                <a class="card" id="card-2" href="projects/project1/project1.html"></a>
+                <a class="card" id="card-3" href="projects/project1/project1.html"></a>
+                <a class="card" id="card-4" href="projects/project1/project1.html"></a>
+            </div>
         </section>
-
-
     </main>
 
     <footer>
