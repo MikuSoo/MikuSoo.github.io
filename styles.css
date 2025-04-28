@@ -272,6 +272,49 @@ nav ul h1 {
 
 /*---------------BUNSSY PROJECT------------*/
 
+#banner {
+  width: 100%;
+  height: 88vh;
+
+
+}
+#banner_projects {
+  width: 100%;
+  height: 88%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  column-gap: 2%;
+  row-gap: 4%;
+}
+
+.button_projects{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+
+/* Estilo geral */
+.banner{
+  background-color: #eee;
+  border-radius: 20px;
+  height: 100%;
+}
+
+/* Banner Case */
+#banner-1 {
+  width: 100%;
+  background-image: url('projects/project1/medias/bunssy_cover.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
 /*---------------ABOUT-----------------*/
 
