@@ -14,54 +14,49 @@
 
 <body>
   <header>
-      <nav>
-          <ul>
-              <h1><a href="index.html" target="_self">Carina Serra</a></h1>
-              <li><a href="work.html" target="_self">Work</a></li>
-              <li><a href="about.html" target="_self">About</a></li>
-              <li><a href="contact.html" target="_self">Contact</a></li>
-          </ul>
-      </nav>
-  </header>
+    <nav>
+        <ul>
+            <h1><a href="index.html" target="_self">Carina Serra</a></h1>
+            <li><a href="work.html" target="_self">Work</a></li>
+            <li><a href="about.html" target="_self">About</a></li>
+            <li><p>Say hello at <a href="mailto:immikusoo@gmail.com">immikusoo@gmail.com</a></p></li>   
+        </ul>
+    </nav>
+</header>
 
   <main>
+
       <section id="profile">
-        <div class="section__pic-container">
-          <img src="REF/815b8d4d0a31eda17a926d30b80e5275.jpg" alt="Carina Serra profile picture" />
-        </div>
-        <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title">Carina Serra</h1>
-          <p class="section__text__p2">Ux/UI Designer</p>
+          <div class="section__text"><p>Hello, I'm</p></div>
+          <h1 >Carina</h1>
+          <h2>UX/UI Designer</h2>
           <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')"> Download CV </button>
             <button class="btn btn-color-1" onclick="location.href='contact.html'"> Contact Info </button>
           </div>
       </section>
 
-      <section id="view">
-        <a href="#works" class="scroll-down" id="scrollDownBtn" address="true"></a>
-      </section>
+      <div id="btn_scroll_works">
+        <p>about me</p>
+        <a href="#about" id="scroll-down"></a>
+    </div>
 
-      <section class="contact-section">
-        <div class="contact-left">
-
-
+      <section id="about">
+        <div class="about-left">
         </div>
 
-        <div class="contact-right">
+        <div class="about-right">
           <div class="about-me_text">
-            <h1 class="hello">Hello</h1>
-            <h3 class="local"><img src="REF/iconlocal.png">Portugal</h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ullam sit deserunt ad at rem ipsum
-              labore, error mollitia quidem commodi nobis ex amet tempore voluptatem blanditiis beatae qui ea!</p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ullam sit deserunt ad at rem ipsum
-              labore, error mollitia quidem commodi nobis ex amet tempore voluptatem blanditiis beatae qui ea!</p>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ullam sit deserunt ad at rem ipsum
-              labore, error mollitia quidem commodi nobis ex amet tempore voluptatem blanditiis beatae qui ea!</p>
-
+            <div class="local"><img src="REF/iconlocal.png"><h4>Portugal</h4></div>
+            <h2>Carina Serra.</h2>
+            <p>I’m a UX/UI and Web Designer from Santarém, Portugal.</p>
+            <p>After seven years of studying design and digital media, by exploring different creative paths along the way, I discovered my true passion for designing apps and websites during my Bachelor’s degree. </p>
+            <p>Since then, I’ve been dedicated to creating digital experiences that blend aesthetics, functionality, and user-centered design.</p>
+            <p>When I’m not working, you’ll find me playing video games, watching movies, or listening to music for inspiration.</p>
+            <p>I’m also an pet lover, with a special soft spot for bunnies🐰</p>
           </div>
-          <div class="social-icons">
+          
+          <div class="socials-container">
             <a href="https://www.linkedin.com/in/carinaserra/"><img src="REF/linkedin.png" alt="LinkedIn"></a>
             <a href="https://www.behance.net/mikusoo"><img src="REF/behance.png" alt="Behance"></a>
             <a href="https://www.instagram.com/immikusoo/"><img src="REF/instagram.png" alt="Instagram"></a>
@@ -69,51 +64,71 @@
           </div>
         </div>
       </section>
+      
+      <section class="tools">
+        <div class="icons">
+          <img src="REF/AI.png" alt="Illustrator">
+          <img src="REF/PS.png" alt="Photoshop">
+          <img src="REF/ID.png" alt="InDesign">
+          <img src="REF/AE.png" alt="After Effects">
+          <img src="REF/FIGMA.png" alt="Figma">
+          <img src="REF/PROCREATE.png" alt="ProCreate">
+        </div>
+
+      </section>
+
       <section>
         <div class="cv-container">
-          <section class="educacao">
-            <h2>Educação</h2>
-            <div class="item">
+            <h2>Education & Experience</h2>
+          <hr>
+            <div class="description">
+              <p><strong>Bachelor ·</strong> Graphic and Multimedia Design</p>
+              <p><strong>ESAD.CR |</strong> Upper School of Arts and Design</p>
               <span class="ano">2022-2025</span>
-              <div>
-                <strong>ESAD.CR</strong> | Design Gráfico e Multimédia
-              </div>
             </div>
-            <div class="item">
+          </hr>
+
+          <hr>
+          <div class="description">
+            <p><strong>IEFP Internship ·</strong> Graphic Designer</p>
+            <p><strong>X BRAND</strong> (Bombarral, Portugal)</p>
+            <span class="ano">5 months - 2022</span>
+          </div>
+        </hr>
+        <hr>
+        <div class="description">
+          <p><strong>Internship ·</strong> Graphic Designer</p>
+          <p><strong>X BRAND</strong> (Bombarral, Portugal)</p>
+          <span class="ano">4 months - 2022</span>
+        </div>
+      </hr>
+
+          <hr>
+            <div class="description">
+              <p><strong>Short Cycles ·</strong> Digital Media Design</p>
+              <p><strong>ESAD.CR |</strong> Upper School of Arts and Design</p>
               <span class="ano">2020-2022</span>
-              <div>
-                <strong>ESAD.CR</strong> | Design para Mídias Digitais
-              </div>
             </div>
-            <div class="item">
+          </hr>
+          
+          <hr>
+          <div class="description">
+            <p><strong>Internship ·</strong> Graphic Designer</p>
+            <p><strong>GRÁFICA PIMENTA</strong> (Cartaxo, Portugal)</p>
+            <span class="ano">5 months -2020</span>
+          </div>
+        </hr>
+
+          <hr>
+            <div class="description">
+              <p><strong>Short Cycles ·</strong> Illustration and Graphic Production</p>
+              <p><strong>ESAD.CR |</strong> Upper School of Arts and Design</p>
               <span class="ano">2018-2020</span>
-              <div>
-                <strong>ESAD.CR</strong> | Ilustração e Produção Gráfica
-              </div>
             </div>
+          </hr>
           </section>
 
-          <section class="experiencia">
-            <h2>Experiência</h2>
-            <div class="item">
-              <span class="ano">2022</span>
-              <div>
-                <strong>X BRAND</strong> | Estágio Profissional IEFP
-              </div>
-            </div>
-            <div class="item">
-              <span class="ano">2022</span>
-              <div>
-                <strong>X BRAND</strong> | Estágio Profissional Curricular
-              </div>
-            </div>
-            <div class="item">
-              <span class="ano">2020</span>
-              <div>
-                <strong>GRÁFICA PIMENTA</strong> | Estágio Profissional Curricular
-              </div>
-            </div>
-          </section>
+        
 
           <section class="skills">
             <h2>Skills</h2>
@@ -133,24 +148,20 @@
 
           </section>
 
-          <section class="tools">
-            <h2>Toolbox</h2>
-            <div class="icons">
-              <img src="REF/AI.png" alt="Illustrator">
-              <img src="REF/PS.png" alt="Photoshop">
-              <img src="REF/ID.png" alt="InDesign">
-              <img src="REF/AE.png" alt="After Effects">
-              <img src="REF/FIGMA.png" alt="Figma">
-              <img src="REF/PROCREATE.png" alt="ProCreate">
-            </div>
-          </section>
 
         </div>
       </section>
 
     </main>
+
     <footer>
-      <p>&#169;2025 Carina Serra - All Rights Reserved.</p>
+      <div> <p>&#169;2025 Carina Serra - All Rights Reserved.</p></div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/carinaserra/"><img src="REF/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.behance.net/mikusoo"><img src="REF/behance.png" alt="Behance"></a>
+        <a href="https://www.instagram.com/immikusoo/"><img src="REF/instagram.png" alt="Instagram"></a>
+        <a href="https://github.com/MikuSoo"><img src="REF/github.png" alt="GitHub"></a>
+      </div>
     </footer>
 </body>
 

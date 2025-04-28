@@ -16,7 +16,7 @@
 
 body {
   background-color: #161616;
-  color: #ffffff;
+  color: whitesmoke;
   font-family:"Sora";
 
   padding-left: 5vw;
@@ -120,7 +120,7 @@ nav ul h1 {
 
 #HiWorld ul {
   margin-top: 50px;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
   list-style-type: none;
 }
 
@@ -275,61 +275,95 @@ nav ul h1 {
 
 /*---------------ABOUT-----------------*/
 
+
 /* PROFILE SECTION */
 
 #profile {
+  height: 90vh;
+
+  background-image: url("REF/pic.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 5rem;
-  height: 80vh;
 }
 
-.section__pic-container {
-  display: flex;
-  height: 600px;
-  width: auto;
-  margin: auto 0;
-  clip-path: circle(200px at center);
+#profile h1 {
+  font-family:"Lostar";
+  color: #58d0c5;
+  opacity: 0.4;
 
+  font-size: 8rem;
 }
-
-.section__text {
-  align-self: center;
-  text-align: center;
+#profile h2 {
+  font-size: 2.5rem;
 }
 
 .section__text p {
-  font-weight: 600;
+  font-size: 1em;
+  margin-top: 2px;
 }
 
-.section__text__p1 {
-  text-align: left;
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-top: 100px;
+  gap: 50px;
 }
 
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+.local {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1em;
+  margin-bottom: 20px;
 
+  text-transform: uppercase;
 }
 
-.title {
-  font-size: 3rem;
-  text-align: left;
+#about div img {
+  height: 30px; 
 }
+.about-right {
+  flex: 1;
+  min-width: 300px;
+}
+.about-left {
+  flex: 1;  
+  background-image: url("REF/pic.png") ;
+  background-repeat: no-repeat;
+  background-size: 80%;
 
-#socials-container {
+}
+.socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  gap: 6rem;
+  margin-top: 30px;
+}
+#about a img {
+  height: 40px; 
+}
+
+.about-me_text p {
+  margin-top: 20px;
 }
 
 /* BUTTONS */
 
 .btn-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
+
+  margin-top: 50px;
+  margin-bottom: 5%;
 }
 
 .btn {
@@ -342,6 +376,7 @@ nav ul h1 {
 .btn-color-1,
 .btn-color-2 {
   border: #58d0c5 0.1rem solid;
+  color: whitesmoke;
 }
 
 .btn-color-1:hover,
@@ -352,7 +387,7 @@ nav ul h1 {
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
-  color: white;
+  color: whitesmoke;
 }
 
 .btn-color-1:hover {
@@ -377,45 +412,52 @@ nav ul h1 {
   width: 400px;
   margin: auto 0;
 
-  justify-content: flex-end
-  
-
+  justify-content: flex-end;
 
 }
-/*ABOUT ME - EXPERIENCE*/
 
-/*---------------CONCTACT ME---------------*/
-.contact-section {
+
+/*ABOUT ME - TOOLBOX*/
+
+.tools{
+  width: 100%;
+  height: 20vh;
+  margin-top: 60px;
   display: flex;
-  justify-content: space-between;
-  padding: 50px 80px;
-  gap: 50px;
-  flex-wrap: wrap;
-
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact-left {
-  flex: 1;
-  min-width: 300px;
-}
-  
-.contact-left h1 {
-  font-size: 76px;
+/*ABOUT ME - EXPERIENCE*/
+.cv-container h2{
+  width: 100%;
   margin-bottom: 20px;
 }
-  
-.contact-left a {
-  color: #58d0c5;
-  text-decoration: none;
-}
-  
-.contact-left a:hover {
-  text-decoration: underline;
-}
-  
-.social-icons {
-  margin-top: 30px;
+.description{
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+  height: 9vh;
+  margin-top: 20px;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-icons {
+  margin-bottom: 20px;
   gap: 20px;
 }
   
@@ -426,70 +468,4 @@ nav ul h1 {
   
 .social-icons img:hover {
   transform: scale(1.1);
-}
-
-
-  
-/* CONCTACT ME - FORM */
-.contact-right {
-  flex: 1;
-  min-width: 300px;
-}
-  
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-  
-form label {
-  font-size: 14px;
-  color: #ccc;
-}
-  
-form input,
-  form textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  background-color: #1a1a1a;
-  color: white;
-}
-  
-form input:focus,
-  form textarea:focus {
-  outline: 2px solid #58d0c5;
-}
-  
-form button {
-  align-self: flex-start;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 30px;
-  background: linear-gradient(to bottom, #58d0c5, #161616);
-  color: #161616;
-  font-weight: bold;
-  cursor: pointer;
-  transition: opacity 0.3s ease;
-}
-  
-form button:hover {
-  opacity: 0.8;
-}
-
-/* FOOTER SECTION */
-
-footer {
-  height: 9vh;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: flex-end;
-}
-
-footer p {
-  text-align: center;
-  margin-bottom: 20px;
 }
