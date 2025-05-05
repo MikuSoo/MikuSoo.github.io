@@ -276,7 +276,6 @@ nav ul h1 {
   width: 100%;
   height: 88vh;
 
-
 }
 #banner_projects {
   width: 100%;
@@ -297,9 +296,72 @@ nav ul h1 {
   display: flex;
   justify-content: space-between;
   
+  color: #ffffff;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #8DF1F8;
+  text-underline-offset: 10px;
+
+  width: 100%;
+  height: 7vh;
+}
+
+/* Banner Tumbnail - Bunssy */
+#banner-1 {
+  width: 100%;
+  height: 70vh;
+  
+  background-image: url('projects/project1/medias/bunssy_tumbnail.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+#project-about {
+  padding: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-image: url('projects/project1/medias/bun_icon.png');
+  background-size: 40vh;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+#project-about h2, h4{
+  color: #FFCB66;
+}
+
+.about_projects{
+  flex-direction: column;
+  width: 70%;
+}
+
+.about_projects p{
+  margin-top: 10px;
 
 }
 
+.description_projects{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.description_projects p{
+  margin-top: 0;
+
+}
+
+
+#bunssy_geometry img {
+  width: 100%; 
+  margin-top: 15vh;
+}
 
 /* Estilo geral */
 .banner{
@@ -308,13 +370,154 @@ nav ul h1 {
   height: 100%;
 }
 
-/* Banner Case */
-#banner-1 {
-  width: 100%;
-  background-image: url('projects/project1/medias/bunssy_cover.jpg');
-  background-size: cover;
-  background-position: center;
+
+/* Container dos Iphone */
+.phone-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  gap: 30px;
+  margin-top: 15vh;
 }
+
+/* Estilo dos mockups Iphone */
+.phone {
+  width: auto;
+  height: 90vh;
+  border-radius: 30px;
+}
+
+.phone2 {
+  width: auto;
+  height: 80vh;
+  
+  border-radius: 30px;
+}
+
+
+/* ABAS SEPARADORAS- MENU*/
+
+#features{
+  width: 100%;
+  height: auto;
+}
+.menu {
+  list-style: none;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li {
+  display:inline-block;
+  padding: 6px;
+  border: 1px solid #DDD;
+  border-radius: 2px; 
+  margin-right: 4px;
+}
+
+article {
+position: relative;
+width: 100%;
+
+}
+
+.Menu_Projects section{
+position: absolute;
+padding: 8px;
+border: 1px solid #DDD;
+border-radius: 2px;
+background: #161616;
+width: 100%;
+z-index: 0;
+
+
+}
+
+.Menu_Projects section.active {
+  z-index: 1;
+}
+
+/* Target cria a referência do elemento clicado */
+.Menu_Projects section:target {
+  z-index: 2
+}
+
+/*features - Mockups*/
+.features_mockups {
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.phone-features img {
+  height: 80vh;
+  object-fit: contain;
+  
+}
+
+.features_description{
+  background-color: white;
+  border-radius: 30px;
+  padding: 40px 100px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 50%;
+}
+
+.icon-circle {
+  background-color: black;
+  width: 15vh;
+  height: 15vh;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle img {
+  width: 28px;
+  height: 28px;
+}
+
+.features_description h1 {
+  font-size: 42px;
+  color: #f2b22b;
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 30vh;
+}
+
+.features_description p {
+  font-size: 16px;
+  color: #161616;
+  line-height: 1.6;
+  margin-left: 30vh;
+}
+
+.features_tags {
+  margin-top: 20px;
+  margin-left: 30vh;
+}
+
+.features_tags span {
+  border: 2px solid #f2b22b;
+  color: #f2b22b;
+  padding: 6px 12px;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
 
 /*---------------ABOUT-----------------*/
 
@@ -368,6 +571,11 @@ nav ul h1 {
   margin-bottom: 20px;
 
   text-transform: uppercase;
+}
+
+.local h4{
+  color: white;
+
 }
 
 #about div img {
