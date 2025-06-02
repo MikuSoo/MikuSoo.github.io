@@ -144,12 +144,38 @@ nav ul h1 {
   height: 38px; 
 }
 
-#HiWorld h1 {
+
+#hellos_container{
+  display: inline-block;
+}
+
+#hellos {
   font-family:"Lostar";
   background: linear-gradient(to bottom, #58d0c5, #161616);
   background-clip: text;
   color: transparent;
   font-size: 8rem;
+  
+  width: 0px;
+  border-right: .06em solid #8DF1F8 ;
+  overflow: hidden;
+  white-space: nowrap;
+  
+  animation: 
+    typing 0.5s steps(8, end) forwards, 
+    blink 1s infinite;
+}
+
+@keyframes typing 
+{
+  from { width: 0% }
+  to { width: 100% }
+}
+
+@keyframes blink 
+{
+  from { border-color: transparent }
+  to { border-color: #8DF1F8; }
 }
 
 #HiWorld h2 {
