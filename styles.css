@@ -33,11 +33,10 @@
   font-family: "Cera PRO Regular";
   font-optical-sizing: auto;
 }
-/* ---------------ESILO BASE--------------- */
+/* ---------------ESTILO BASE--------------- */
 *{
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
 }
 
 body {
@@ -94,6 +93,7 @@ nav ul {
 nav ul li {
   list-style-type: none;
   margin-left: 15px;
+  height: 0px;
 }
 
 nav ul h1 {
@@ -117,18 +117,16 @@ nav ul h1 {
 #HiWorld {
   height: 90vh;
   background-image: url("REF/background.png");
-  background-position: right center;
+  background-position: right top;
   background-repeat: no-repeat;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #HiWorld div {
   width: 100%;
   display: flex;
   text-transform: uppercase;
+  margin-top: 12vh;
 }
 
 #HiWorld div p {
@@ -141,12 +139,13 @@ nav ul h1 {
 }
 
 #HiWorld div img {
-  height: 38px; 
+  height: 30px; 
 }
 
 
 #hellos_container{
   display: inline-block;
+  height: 30vh;
 }
 
 #hellos {
@@ -156,7 +155,7 @@ nav ul h1 {
   color: transparent;
   font-size: 8rem;
   
-  width: 0px;
+  width:0pt;
   border-right: .06em solid #8DF1F8 ;
   overflow: hidden;
   white-space: nowrap;
@@ -179,7 +178,7 @@ nav ul h1 {
 }
 
 #HiWorld h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #HiWorld ul {
@@ -191,13 +190,15 @@ nav ul h1 {
 #HiWorld ul li {
   display: inline;
 
-  border-top: #8DF1F8 2px solid;
-  border-radius: 20px 20px 0 0;
+  border: #58d0c5 0.1rem solid;
+  color: whitesmoke;
   padding: 12px 24px;
+  border-radius: 20px;
+
   margin-right: 10px;
   margin-top: 0px;
 
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -319,7 +320,7 @@ nav ul h1 {
 /* Bloco 1 – grande (2/3 da largura) */
 #card-1 {
   flex-basis: 64%;
-  background-image: url('projects/project1/medias/bunssy_cover.jpg'); /* Caminho da imagem */
+  background-image: url('projects/project1/medias/bunssy_cover2.jpg'); /* Caminho da imagem */
   background-size: cover;
   background-position: center;
 }
@@ -402,11 +403,6 @@ nav ul h1 {
 
   display: flex;
   justify-content: space-between;
-
-  background-image: url('projects/project1/medias/bun_icon.png');
-  background-size: 40vh;
-  background-repeat: no-repeat;
-  background-position: left bottom;
 }
 
 #project-about h2{
@@ -908,17 +904,49 @@ nav ul h1 {
 }
 #mockup-old-new{
   display: flex;
+  align-items: top;
+  margin: 3vh;
+
+  gap: 2rem;
 }
 
 #old-website{
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   
   background-image: url('projects/project4/medias/momondo_old.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
+#new-website{
+  width: 100%;
+  height: 51vh;
+  margin-top: 3vh;
+
+  background-color: #0F0F0F;
+
+  
+  background-image: url('projects/project4/medias/Momondo_Redesign.gif');
+  background-size: cover;
+  background-position: top;
+}
+
+.description_website{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  gap: 2vh;
+}
+.description_Redesign{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1vh;
+  margin-bottom: 3vh;  
+}
+
 .icons{
 width: 100%;
 
@@ -1038,7 +1066,7 @@ margin-bottom: 6vh;
 }
 .about-left {
   flex: 1;  
-  background-image: url("REF/pic.png") ;
+  background-image: url("REF/profile.png") ;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1130,6 +1158,20 @@ margin-bottom: 6vh;
   align-items: center;
 }
 
+.icons-tolls{
+width: 100%;
+
+display: flex;
+justify-content: center;
+gap: 6vh;
+margin-bottom: 6vh;
+}
+
+.icons-tolls img{
+  object-fit: contain;
+}
+
+
 /*ABOUT ME - EXPERIENCE*/
 .cv-container h2{
   width: 100%;
@@ -1140,8 +1182,36 @@ margin-bottom: 6vh;
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 20px;
-
 }
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border-color: #58d0c5;
+
+  margin-top: 10vh;
+  height: 100%;
+}
+
+.skills_tags{
+  border: #58d0c5 0.1rem solid;
+  padding: 24px 24px;
+  border-radius: 20px;
+
+  width: 20%;
+}
+
+.skills hr{
+ color: #58d0c5;
+}
+
+.skills ul li{
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
 
 
 /* FOOTER SECTION */
@@ -1171,3 +1241,4 @@ footer {
 .social-icons img:hover {
   transform: scale(1.1);
 }
+
