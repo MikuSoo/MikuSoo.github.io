@@ -100,16 +100,19 @@ nav ul h1 {
   flex-grow: 1;
 }
 
-#email_container 
-{
+#email_container {
   display: inline-block;
 }
 
-#email_container button 
-{
-  margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
+#email_container button {
+  margin-left: 40%;
+  width: 40%;
+  padding: 0.2rem;
+
+  border: #58d0c5 0.1rem solid;
+  border-radius: 10px;
+  background: none;
+  color: whitesmoke;
 }
 
 /*---------------APRESENTATION---------------*/
