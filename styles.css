@@ -75,30 +75,38 @@ header {
   height: 10vh;
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 nav {
   width: 100%;
+  display: flex;
+  align-items: center;
 }
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
 
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
 }
 
 nav ul li {
   list-style-type: none;
   margin-left: 15px;
-  height: 0px;
 }
 
-nav ul h1 {
-  flex-grow: 1;
-}
+
 
 #email_container {
   display: inline-block;
@@ -113,6 +121,17 @@ nav ul h1 {
   border-radius: 10px;
   background: none;
   color: whitesmoke;
+}
+
+/* ----- Botão de menu escondido no desktop ----- */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: whitesmoke;
+  cursor: pointer;
+  padding: 10px;
 }
 
 /*---------------APRESENTATION---------------*/
@@ -148,7 +167,7 @@ nav ul h1 {
 
 #hellos_container{
   display: inline-block;
-  height: 30vh;
+  height: 20vh;
 }
 
 #hellos {
@@ -1036,12 +1055,13 @@ margin-bottom: 6vh;
 }
 
 #about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
   margin-top: 100px;
-  gap: 50px;
+
+
+  background-image: url("REF/profile.png") ;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 20vh center;
 }
 
 .local {
@@ -1060,30 +1080,31 @@ margin-bottom: 6vh;
 
 }
 
-#about div img {
-  height: 30px; 
-}
+
 .about-right {
   flex: 1;
   min-width: 300px;
 }
-.about-left {
-  flex: 1;  
-  background-image: url("REF/profile.png") ;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
+
 .socials-container {
   display: flex;
   justify-content: center;
-  gap: 6rem;
+  gap: 4vh;
   margin-top: 30px;
+
+  width: 50%;
+  height: 50%;
+  margin-left: 50%;
 }
 #about a img {
   height: 40px; 
 }
 
+.about-me_text{
+  width: 50%;
+  height: 50%;
+  margin-left: 50%;
+}
 .about-me_text p {
   margin-top: 20px;
 }
@@ -1220,16 +1241,17 @@ margin-bottom: 6vh;
 /* FOOTER SECTION */
 
 footer {
-  height: 9vh;
-  width: 100%;
-  margin-top: 20px;
+  height: 9vh; /* Altura relativa à altura da viewport */
+  width: 100%;  /* Largura total */
+  margin-top: 20px; /* Espaço acima do footer */
   
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex; /* Usa flexbox para alinhar conteúdo */
+  flex-direction: row; /* Elementos em linha (lado a lado) */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha, se necessário */
   align-content: flex-end;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .social-icons {
@@ -1238,10 +1260,240 @@ footer {
   
 .social-icons img {
   width: 32px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease; /* Suaviza o efeito de zoom ao passar o rato */
 }
-  
+
+/* Efeito de "zoom" ao passar o rato sobre os ícones */
+
 .social-icons img:hover {
   transform: scale(1.1);
 }
 
+
+/*RESPONSIVE - MOBILE */
+
+@media only screen and (min-width: 768px){
+  #email_container button {
+  width: 10%;
+  padding: 0.2rem;
+  position:absolute;
+  right:5vw;
+  top: 7vh;
+  }
+}
+
+
+@media only screen and (max-width: 767px){
+/*NAV BAR */
+nav{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.nav-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-toggle {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 2;
+}
+#email_container {
+  display: inline-block;
+}
+
+#email_container button {
+  width: 66%;
+  margin-left: 34%;
+  margin-top: 1vh;
+  padding: 0.2rem;
+  position: relative;
+}
+
+nav ul {
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #161616;
+
+  position: absolute;
+  top: 7vh;
+  width: 82%;  
+  padding: 1rem;
+  display: none; /* Esconde o menu inicialmente */
+}
+
+nav ul.open {
+  display: flex; /* Mostra o menu quando clicado */
+  border-radius: 0 0 18px 18px;
+
+}
+
+nav ul h1 {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+nav ul li {
+  margin: 10px 0;
+  height: auto;
+}
+
+#HiWorld{
+  height: 75vh;
+
+  background-size: 15vh;
+  background-position: center;
+  background-position-y: 38vh ;
+}
+#HiWorld div{
+  margin-top: 20vh;
+}
+
+#hellos_container{
+  height: 10vh;
+}
+
+#hellos{
+  font-size: 7rem;
+  width: 100%;
+}
+
+#HiWorld ul{
+  font-size: 0.8rem;
+}
+
+#HiWorld ul li{
+  padding: 3%;
+  border-radius: 18px;
+}
+
+#btn_scroll_works{
+  bottom: 3vh;
+}
+
+#card-1, #card-2{
+  flex-basis: 49%;
+}
+/*RESPONSIVE - ABOUT ME */
+#profile{
+  background-position: top center;
+  background-size: 90%;
+}
+
+#profile h1{
+  font-size: 6rem;
+}
+#profile h2 {
+  font-size: 1.5rem;
+}
+.section__text p {
+  margin-top: 22vh;
+}
+
+#about {
+  margin-top: 3vh;
+  background-image: none
+}
+
+.about-me_text{
+  width: 100%;
+  height: 50%;
+  margin-left: 0;
+}
+
+.socials-container{
+  gap: 2vh;
+  width: 100%;
+  margin-left: 0;
+}
+
+.tools{
+  height: 30vh;
+}
+
+.icons-tolls{
+  flex-wrap: wrap;
+  gap: 1vh;
+}
+
+.description{
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.skills{
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.skills_tags{
+  width: 86%;
+}
+
+
+/*RESPONSIVE - PROJECT 01 - BUNSSY */
+#banner{
+  height: 64vh;
+}
+#banner-1{
+  height: 50vh;
+  background-image: url('projects/project1/medias/bunssy_tumbnail.jpg');
+}
+
+#project-about{
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.about_projects{
+  width: 100%;
+  margin-top: 6vh;
+}
+
+.description_projects {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#bunssy_geometry img {
+  margin-top: 2vh;
+}
+.phone-container {
+  gap: 0;
+}
+.phone {
+  height: 25vh;
+}
+.phone2 {
+  height: 25vh;
+}
+/*FOOTER - ABOUT ME */
+
+footer {
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Oculta a primeira <div> com o texto © */ 
+footer > div:first-child {
+  display: none;
+}
+
+.social-icons {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+}

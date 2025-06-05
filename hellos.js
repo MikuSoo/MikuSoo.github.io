@@ -27,7 +27,6 @@ function setup(){
   hellos[2] = "ciao";
   hellos[3] = "여보!";
   hellos[4] = "你好";
-  hellos[5] = "こんにちは";
 
   hellos_container_element = select("#hellos_container");
 }
@@ -99,4 +98,10 @@ function showEmailButton()
 function hideEmailButton() 
 {
   email_button_element.hide();
+}
+
+/*JAVA SCRIPT PARA O MENU ☰ HAMBURGUER*/
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('open');
 }

@@ -61,3 +61,9 @@ function hideEmailButton()
 {
   email_button_element.hide();
 }
+
+/*JAVA SCRIPT PARA O MENU ☰ HAMBURGUER*/
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('open');
+}
