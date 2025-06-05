@@ -460,7 +460,6 @@ nav ul li {
 
 /* Estilo geral */
 .banner{
-  background-color: #eee;
   border-radius: 20px;
   height: 100%;
 }
@@ -1385,7 +1384,7 @@ nav ul li {
 /*RESPONSIVE - ABOUT ME */
 #profile{
   background-position: top center;
-  background-size: 90%;
+  background-size: 80%;
 }
 
 #profile h1{
@@ -1398,9 +1397,13 @@ nav ul li {
   margin-top: 22vh;
 }
 
+.btn-container {
+  margin-top: 2vh;
+}
+
 #about {
   margin-top: 3vh;
-  background-image: none
+  background-image: none;
 }
 
 .about-me_text{
@@ -1422,6 +1425,9 @@ nav ul li {
 .icons-tolls{
   flex-wrap: wrap;
   gap: 1vh;
+}
+.icons-tolls img{
+  width: 8vh;
 }
 
 .description{
@@ -1468,6 +1474,12 @@ nav ul li {
 }
 .phone-container {
   gap: 0;
+  margin-top: 10vh;
+
+}
+.phone-features img {
+  height: 50vh;
+  align-items: center;
 }
 .phone {
   height: 25vh;
@@ -1475,6 +1487,312 @@ nav ul li {
 .phone2 {
   height: 25vh;
 }
+
+
+#features {
+  width: 100%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.phone-features {
+  position: relative;
+}
+
+.features_mockups {
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.features_description {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px 0vh 20px 2vh;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 38vh;
+  margin-left: 0;
+  margin-top: 2vh;
+}
+
+.features_description p br{
+  display: none;
+}
+
+.features_mockups2 {
+  align-items: center;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  flex-direction: column-reverse;
+}
+.features_description h1 {
+    font-size: 30px;
+}
+.features_description img {
+  width: 3vh;
+  height: 3vh;
+}
+.features_description p {
+  font-size: 14px;
+}
+.features_description2 {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px 2vh 20px 2vh;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 38vh;
+  margin-right: 0;
+  margin-top: 2vh;
+
+  flex-direction: column;
+}
+
+.features_description2 h1 {
+  font-size: 30px;
+  text-align: left;
+}
+.features_description2 img {
+  width: 3vh;
+  height: 3vh;
+}
+
+.features_description2 p br{
+  display: none;
+}
+
+.features_description2 p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.features_tags {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vh;
+  width: 100%;
+}
+
+.typeface {
+  flex-direction: column;
+  gap: 2vh;
+}
+.typeface_project h1 {
+  font-size: 30px;
+  gap: 1vh;
+}
+
+.typeface_project h1 br{
+  display: none;
+}
+.left {
+  width: 100%;
+}
+
+.right{
+  width: 90%;
+}
+
+.wireframes {
+  margin-top: 2vh;
+  gap: 0;
+  justify-content: space-evenly;
+}
+.wireframes img {
+  height: 23vh;
+}
+
+.description_tags {
+  gap: 1vh;
+}
+
+/*RESPONSIVE - PROJECT 02 - PRIMAVERA LONGA */
+
+#banner{
+  height: 64vh;
+  background-color: none;
+}
+#banner-2{
+  height: 50vh;
+  background-image: url(projects/project2/medias/primaveraLonga_banner.jpg);
+}
+
+#project2-about{
+  flex-direction: column;
+  padding: 1rem;
+}
+
+#logo-1{
+  height: 50vh;
+  
+  background-image: url('projects/project2/medias/primaveralonga_Logo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+
+}
+
+#section-title {
+  padding: 1rem;
+}
+.poster-1{
+  height: 55vh;
+  width: 100%;
+
+  margin-top: 4vh;
+}
+.poster-2{
+  height: 55vh;
+  width: 100%;
+}
+
+#banner_posters{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  row-gap: 2vh;
+}
+
+.section-stories video {
+  width: 90%;
+}
+.section-posts {
+  margin-top: 4vh;
+}
+
+.section-posts img {
+  height: 50vh;
+}
+
+.section-stories video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.section-teaser video {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    border-radius: 20px;
+
+}
+
+/*RESPONSIVE - PROJECT 03 - WATERBOMB */
+
+#banner-3{
+  height: 50vh;
+  background-image: url(projects/project3/medias/WaterBomb_Cover.jpg);
+}
+
+#project3-about{
+  flex-direction: column;
+  padding: 1rem;
+}
+
+
+#logo-2{
+  height: 50vh;
+  
+  background-image: url('projects/project3/medias/ABOUT_WATERBOMB.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+#banner_posters .phone2 {
+  width: 100%;
+  height: auto;
+}
+
+#banner_posters .phone-container{
+
+  margin-top: 2vh;
+}
+
+.posterAR-1 {
+  width: 100%;
+  height: 54vh;
+
+  border-radius: 20px;
+}
+
+#typo {
+  margin-top: 2vh;
+}
+
+/*RESPONSIVE - PROJECT 03 - WATERBOMB */
+
+#banner-4{
+  height: 50vh;
+  background-image: url('projects/project4/medias/momondo_tumbnail.jpg');
+}
+
+#project4-about{
+  flex-direction: column;
+  padding: 1rem;
+}
+
+#mockup-old-new{
+  flex-direction: column;
+  margin: 0; 
+
+   row-gap: 0;
+}
+
+#old-website{
+  height: 30vh;
+}
+
+#new-website{
+  width: 100%;
+  height: 26vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 0vh;
+}
+
+.description_website h3{
+  display: none;
+}
+
+#iconography_contruction .icons{
+  gap: 1vh;
+  margin-bottom: 2vh;
+}
+
+#iconography_contruction .icons img{
+  width: 12vh;
+  height: auto;
+}
+
+.description_img {
+  gap: 1vh;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#iconography_contruction{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+#icons-fam {
+  width: 100%;
+  height: 21.16vh;
+  background-image: url(projects/project4/medias/momondo_famicon.png);
+  background-size: contain;
+}
+
+.features3_tags{
+  margin-top: 3vh;
+}
+
 /*FOOTER - ABOUT ME */
 
 footer {
