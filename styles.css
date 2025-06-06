@@ -1381,6 +1381,27 @@ nav ul li {
 #card-1, #card-2{
   flex-basis: 49%;
 }
+#card-1{
+  background-image: url('projects/project1/medias/bunssy_coverMobile.jpg');
+  background-size: cover;
+}
+
+#card-2{
+  background-image: url('projects/project2/medias/primaveraLonga_coverMobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#card-3{
+  background-image: url('projects/project3/medias/WaterBomb_coverMobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#card-4{
+  background-image: url('projects/project4/medias/momondo_coverMobile.jpg');
+  background-size: cover;
+  background-position: center;
+}
 /*RESPONSIVE - ABOUT ME */
 #profile{
   background-position: top center;
