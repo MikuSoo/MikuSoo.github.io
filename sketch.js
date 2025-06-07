@@ -1,3 +1,19 @@
+/*
+Carina Serra | 3220661
+
+6 JUNHO
+
+PORTFOLIO FINAL
+
+Época de Avaliação - Continua (durante as aulas)
+
+ESAD.CR
+2024-2025
+3ºAno DGM-Multimédia 
+2º Semestre
+Marco Heleno - Laboratório de Projeto II
+*/
+
 let email_container_element, email_a_element, email_button_element;
 let temp_input;
 
@@ -40,30 +56,28 @@ function copyEmail(){
   }
 }
 
-
+//copyEmailFallback() Método antigo para copiar texto
 function copyEmailFallback(){
-  temp_input.elt.select();
-  document.execCommand ('copy');
+  temp_input.elt.select(); // Seleciona o conteúdo
+  document.execCommand ('copy'); // Executa comando de cópia
   
-  temp_input.remove();
-  email_button_element.hide();
+  temp_input.remove(); // Remove o input
+  email_button_element.hide(); // Oculta o botão
   
   console.log ("Email copied to clipboard");
 }
 
-function showEmailButton() 
-{
-  email_button_element.show();
+// Mostrar/Ocultar botão de email
+function showEmailButton(){
+  email_button_element.show(); // Exibe o botão
 }
 
-
-function hideEmailButton() 
-{
-  email_button_element.hide();
+function hideEmailButton(){
+  email_button_element.hide(); // Oculta o botão
 }
 
 /*JAVA SCRIPT PARA O MENU ☰ HAMBURGUER*/
 function toggleMenu() {
-  const menu = document.getElementById('menu');
-  menu.classList.toggle('open');
+  const menu = document.getElementById('menu'); // Seleciona o menu pelo ID
+  menu.classList.toggle('open');  // Alterna a classe 'open' (abre/fecha)
 }

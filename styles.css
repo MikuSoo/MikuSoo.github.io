@@ -1,3 +1,19 @@
+/*
+Carina Serra | 3220661
+
+6 JUNHO
+
+PORTFOLIO FINAL
+
+Época de Avaliação - Continua (durante as aulas)
+
+ESAD.CR
+2024-2025
+3ºAno DGM-Multimédia 
+2º Semestre
+Marco Heleno - Laboratório de Projeto II
+*/
+
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
@@ -72,127 +88,138 @@ html {
 /*---------------NAVBAR---------------*/
 
 header {
-  height: 10vh;
+  height: 10vh; /* Altura de 10% da altura da viewport */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Utiliza Flexbox para organizar o conteúdo */
+  justify-content: center; /*Alinha horizontalmente ao Centro*/
+  align-items: center; /*Alinha vertical ao Centro*/
 }
 
 nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
+  width: 100%;  /* Ocupa toda a largura do container */
+  display: flex;  /* Flexbox para alinhar os itens */
+  align-items: center; /* Alinha verticalmente os itens ao centro */
 }
 
+/* Container principal da navbar (logotipo + itens de menu) */
 .nav-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
+  display: flex; /* Flexbox para alinhar os itens */
+  justify-content: space-between; /* Espaçamento os elementos com o máximo de distância possível entre eles */
+  align-items: center; /*Alinha vertical ao Centro*/
+  width: 50%;  /* Ocupa 50% da largura do container pai */
 }
 
 
+/* Lista de navegação (MENU) */
 nav ul {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: row; /* Garante que os itens fiquem em linha horizontal */
+  justify-content: flex-end; /* Alinha os itens à direita */
   align-items: center;
-  width: 50%;
+  width: 50%; /* Ocupa os outros 50% da navbar */
 }
 
+/* Estilo para cada item da lista */
 nav ul li {
-  list-style-type: none;
-  margin-left: 15px;
+  list-style-type: none; /* Remove os marcadores de lista padrão */
+  margin-left: 15px; /* Espaçamento à esquerda entre os itens */
 }
 
 
-
+/* Contêiner para o campo de e-mail (botão relacionado) */
 #email_container {
-  display: inline-block;
+  display: inline-block; /* Exibe como um bloco em linha */
 }
 
+/* Estilo para o botão dentro do container do e-mail */
 #email_container button {
-  margin-left: 40%;
-  width: 40%;
-  padding: 0.2rem;
+  margin-left: 40%; /* Margem à esquerda para posicionamento */
+  width: 40%; /* Largura relativa ao container */
+  padding: 0.2rem;  /* Espaçamento interno */
 
-  border: #58d0c5 0.1rem solid;
-  border-radius: 10px;
-  background: none;
-  color: whitesmoke;
+  border: #58d0c5 0.1rem solid; /* Estilo do contorno*/
+  border-radius: 10px; /*Canto Arredondado*/
+  background: none; /* Fundo transparente */
+  color: whitesmoke; /*Cor do Texto*/
 }
 
 /* ----- Botão de menu escondido no desktop ----- */
 .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 1.8rem;
-  color: whitesmoke;
+  display: none; /* Oculta o botão em resoluções maiores (como em desktops).
+                    Sendo exibido via media query em telas menores (ex: mobile) */
+  background: none; /* Remove o fundo padrão do botão */
+  border: none; /* Remove a borda padrão do botão */
+
+  font-size: 1.8rem; /* Define o tamanho do ícone de "menu" hambúrguer */
+  color: whitesmoke; /* Cor do ícone/texto do botão */
   cursor: pointer;
-  padding: 10px;
+  padding: 10px; /* Espaçamento interno ao redor do botão */
 }
 
 /*---------------APRESENTATION---------------*/
 
 #HiWorld {
-  height: 90vh;
-  background-image: url("REF/background.png");
-  background-position: right top;
-  background-repeat: no-repeat;
+  height: 90vh; /* Ocupa 90% da altura da tela */
+  background-image: url("REF/background.png"); /* Define imagem de fundo */
+  background-position: right top; /* Alinha a imagem no canto superior direito */
+  background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
 
 }
 
 #HiWorld div {
   width: 100%;
   display: flex;
-  text-transform: uppercase;
-  margin-top: 12vh;
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  margin-top: 12vh; /* Espaçamento do topo */
 }
 
+/* ----- Estilo para o Local ----- */
 #HiWorld div p {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo na horizontal */
+  align-items: center; /* Centraliza o conteúdo na vertical */
   font-size: 1em;
   margin-top: 2px;
 }
 
 #HiWorld div img {
-  height: 30px; 
+  height: 30px; /* Altura das imagens dentro do div */
 }
 
-
+/* ----- CSS da manipulação do Hellos.js ---- */
 #hellos_container{
   display: inline-block;
-  height: 20vh;
+  height: 20vh; /* Altura do contêiner onde aparece a palavra “hello” */
 }
 
 #hellos {
-  font-family:"Lostar";
-  background: linear-gradient(to bottom, #58d0c5, #161616);
-  background-clip: text;
-  color: transparent;
-  font-size: 8rem;
+  font-family:"Lostar"; /* Fonte personalizada */
+  background: linear-gradient(to bottom, #58d0c5, #161616); /* Degradê para o texto */
+  background-clip: text;  /* Aplica o degradê ao texto */
+  color: transparent; /* Torna a cor base do texto transparente para mostrar o degradê */
+  font-size: 8rem; /*Tamanho da fonte*/
   
-  width:0pt;
-  border-right: .06em solid #8DF1F8 ;
-  overflow: hidden;
-  white-space: nowrap;
+  width:0pt; /* Inicialmente, largura zero para o efeito de digitação */
+  border-right: .06em solid #8DF1F8 ; /* Linha vertical para simulação do cursor */
+  overflow: hidden; /* Esconde o conteúdo que ultrapassa a largura inicial */
+  white-space: nowrap; /* Impede quebra de linha */
   
+
+  /*Animação com efeito de escrita, juntamente o piscar do cursor */
   animation: 
     typing 0.5s steps(8, end) forwards, 
     blink 1s infinite;
 }
 
+/* Animação de digitação */
 @keyframes typing 
 {
   from { width: 0% }
   to { width: 100% }
 }
 
+/* Animação de piscar o cursor */
 @keyframes blink 
 {
   from { border-color: transparent }
@@ -200,22 +227,22 @@ nav ul li {
 }
 
 #HiWorld h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem; /* Tamanho do subtítulo - I'm Carina Serra. */
 }
 
 #HiWorld ul {
   margin-top: 50px;
   margin-bottom: 5%;
-  list-style-type: none;
+  list-style-type: none; /* Remove marcadores da lista */
 }
 
 #HiWorld ul li {
-  display: inline;
+  display: inline; /* Lista os itens em linha */
 
-  border: #58d0c5 0.1rem solid;
-  color: whitesmoke;
-  padding: 12px 24px;
-  border-radius: 20px;
+  border: #58d0c5 0.1rem solid; /* contorno do canto do botão */
+  color: whitesmoke; /* Cor do texto */
+  padding: 12px 24px; /* Espaçamento interno do container*/
+  border-radius: 20px; /* Bordas arredondadas */
 
   margin-right: 10px;
   margin-top: 0px;
@@ -224,15 +251,16 @@ nav ul li {
   font-weight: 600;
 }
 
-#btn_scroll_works 
-{
+/* Botão de saltar para seção seguinte (scroll down) */
+#btn_scroll_works {
   position: absolute;
   width: 90vw;
   left: 5vw;
   bottom: 10vh;
-  text-align: center;
-  z-index: 2;
+  text-align: center; /* Posiciona acima da base da tela */
+  z-index: 2; /* controla a ordem de sobreposição dos elementos no eixo Z*/
 
+  /* Animações do botão */
   -webkit-transition: all .5s ease-in 3s;
   transition: all .5s ease-in 3s;
   -webkit-animation: bounce 2s infinite 2s;
@@ -241,6 +269,7 @@ nav ul li {
   transition: all .2s ease-in;
 }
 
+/*  Estilo para Elipse com seta para pular seção */
 #scroll-down {
   margin-top: 15px;
   display: inline-block;
@@ -248,51 +277,53 @@ nav ul li {
   height: 32px;
   border: 2px solid #FFF;
   background-size: 14px auto;
-  border-radius: 50%;
+  border-radius: 50%; /* Forma para a ellipse */
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1); /* Sem escala adicional */
 }
 
+/* Estilo da seta apontando para baixo */
 #scroll-down:before {
   position: absolute;
-  top: calc(50% - 9px);
-  left: calc(50% - 7px);
-  transform: rotate(-45deg);
+  top: calc(50% - 9px); /* Centraliza verticalmente */
+  left: calc(50% - 7px); /* Centraliza horizontalmente */
+  transform: rotate(-45deg); /* Rotação do eixo para parecer uma seta */
   display: block;
   width: 12px;
   height: 12px;
   content: "";
   border: 2px solid white;
-  border-width: 0px 0 2px 2px;
+  border-width: 0px 0 2px 2px; /* Apenas borda inferior e esquerda */
 }
 
+/* Animação de "pulo" do botão */
 @keyframes bounce {
   0%,
   100%,
   20%,
   50%,
-  80% {
+  80% { /* Posição original, sem deslocamento */
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
-  40% {
+  40% {  /* Sobe */
     -webkit-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
     transform: translateY(-10px);
   }
-  60% {
+  60% { /* Desce um pouco */
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
-    transform: translateY(-5px);
+    transform: translateY(-5px); 
   }
 }
 
 /*---------------WORK-----------------*/
 
 #works {
-  width: 100%;
-  height: 91vh;
+  width: 100%;  /* Ocupa toda a largura disponível */
+  height: 91vh;  /* Altura de 91% da altura da viewport */
 }
 
 #title-works {
@@ -300,64 +331,66 @@ nav ul li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 12%;
+  height: 12%; /* Ocupa 12% da altura da seção #works */
 }
 
+/* Estilo do buttão - Ver Mais*/
 #title-works a {
   color: #ffffff;
-  text-decoration-line: underline;
+  text-decoration-line: underline; /* Sublinhado */
   text-decoration-style: solid;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 2px; /* Espessura da linha */
   text-decoration-color: #8DF1F8;
-  text-underline-offset: 10px;
+  text-underline-offset: 10px; /* Distância do sublinhado em relação ao texto */
 }
 
+/* Estilo das Grelhas - Projetos*/
 #grid-works {
   width: 100%;
-  height: 88%;
+  height: 88%; /* Ocupa o restante da altura de #works (88%) */
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  display: flex; /* Layout flexível para as grelhas*/
+  flex-direction: row; /* Alinhamento horizontal */
+  justify-content: flex-start; /* Começa à esquerda */
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Permite quebra de linha */
   align-content: flex-start;
 
-  column-gap: 2%;
-  row-gap: 4%;
+  column-gap: 2%; /* Espaçamento horizontal entre as grelhas */
+  row-gap: 4%; /* Espaçamento vertical*/
 }
 
 #grid-works a {
-  height: 48%;
-  display: flex;
+  height: 48%; /* Altura de cada caixa da grelha (metade do grid, aproximadamente) */
+  display: flex; /* Permite colocar conteúdo interno flexível */
 }
 
-/* Estilo geral */
+/* Estilo geral das caixas da Grelha */
 .card {
   background-color: #eee;
-  border-radius: 20px;
-  height: 100%;
+  border-radius: 20px; /* Bordas arredondadas */
+  height: 100%; /* Ocupa toda a altura do container <a> */
 }
 
 /* Bloco 1 – grande (2/3 da largura) */
 #card-1 {
-  flex-basis: 64%;
+  flex-basis: 64%; /* Ocupa 64% da linha */
   background-image: url('projects/project1/medias/bunssy_cover2.jpg'); /* Caminho da imagem */
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* Imagem cobre todo o espaço */
+  background-position: center; /* Centraliza a imagem */
 }
 
 /* Bloco 2 – pequeno (1/3 da largura) */
 #card-2 {
   flex-basis: 34%;
   background-image: url('projects/project2/medias/primaveraLonga_Cover.jpg');
-  background-size: cover;
+  background-size: cover;  /* A imagem cobre a área */
 
 }
 
 /* Blocos 3 e 4 – médios (1/2 cada) */
 #card-3, #card-4 {
-  flex-basis: 49%;
+  flex-basis: 49%; /* Cada um ocupa quase metade da linha */
 }
 
 #card-3{
@@ -372,16 +405,17 @@ nav ul li {
   background-position: center;
 }
 
-/*---------------BUNSSY PROJECT------------*/
+/*---------PROJECT 01 - BUNSSY PROJECT----------*/
 
+/* Container principal da capa do projeto */
 #banner {
-  width: 100%;
-  height: 88vh;
-
+  width: 100%; /* Largura total */
+  height: 88vh; /* Altura de 88% da altura da viewport */
 }
+
 #banner_projects {
-  width: 100%;
-  height: 88%;
+  width: 100%; /* Largura total */
+  height: 88%; /* Altura proporcional ao container pai */
 
   display: flex;
   flex-direction: row;
@@ -390,28 +424,28 @@ nav ul li {
   flex-wrap: wrap;
   align-content: flex-start;
 
-  column-gap: 2%;
-  row-gap: 4%;
+  column-gap: 2%; /* Espaço entre colunas */
+  row-gap: 4%; /* Espaço entre linhas */
 }
 
 .button_projects{
-  display: flex;
-  justify-content: space-between;
-  
-  color: #ffffff;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 2px;
-  text-decoration-color: #8DF1F8;
-  text-underline-offset: 10px;
+  display: flex; /* Usa Flexbox */
+  justify-content: space-between; /* Espaço entre os elementos filhos */
 
-  width: 100%;
-  height: 7vh;
+  color: #ffffff; /* Cor do texto branca */
+  text-decoration-line: underline; /* Sublinhar texto */
+  text-decoration-style: solid; /* Estilo da linha sólida */
+  text-decoration-thickness: 2px; /* Espessura da linha */
+  text-decoration-color: #8DF1F8; /* Cor do sublinhado */
+  text-underline-offset: 10px; /* Distância do sublinhado até o texto */
+
+  width: 100%; /* Largura total */
+  height: 7vh; /* Altura de 7% da viewport */
 }
 
 /* Banner Tumbnail - Bunssy */
 #banner-1 {
-  width: 100%;
+  width: 100%; /* Largura total */
   height: 70vh;
   
   background-image: url('projects/project1/medias/bunssy_tumbnail.jpg');
@@ -427,30 +461,31 @@ nav ul li {
   justify-content: space-between;
 }
 
+/*Alteração de Estilo do H2 para a cor do projeto*/
 #project-about h2{
-  color: #FFCB66;
+  color: #FFCB66; 
 }
 
 .about_projects{
-  flex-direction: column;
+  flex-direction: column; /* Direção vertical */
   width: 70%;
 }
 
 .about_projects p{
-  margin-top: 10px;
+  margin-top: 10px; /* Espaço superior nos parágrafos */
 
 }
 
 .description_projects{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  display: flex; /* Usa Flexbox */
+  justify-content: space-between; /* Espaço entre os elementos */
+  align-items: center; /* Centraliza verticalmente os itens */
+  margin-top: 20px; /* Espaço superior */
+  margin-bottom: 10px; /* Espaço inferior */
 }
 
 .description_projects p{
-  margin-top: 0;
+  margin-top: 0; /* Remove margem superior */
 }
 
 #bunssy_geometry img {
@@ -464,74 +499,74 @@ nav ul li {
   height: 100%;
 }
 
-
 /* Container dos Iphone */
 .phone-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Usa Flexbox */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
 
-
-  gap: 30px;
-  margin-top: 15vh;
+  gap: 30px; /* Espaçamento entre os itens */
+  margin-top: 15vh; /* Espaço acima */
 }
 
 /* Estilo dos mockups Iphone */
 .phone {
-  width: auto;
-  height: 90vh;
-  border-radius: 30px;
+  width: auto; /* Largura automática */
+  height: 90vh; /* Altura de 90% da viewport */
+  border-radius: 30px; /* Cantos arredondados */
 }
 
 .phone2 {
-  width: auto;
-  height: 80vh;
+  width: auto; /* Largura automática */
+  height: 80vh; /* Altura de 80% da viewport */
   
-  border-radius: 30px;
+  border-radius: 30px; /* Cantos arredondados */
 }
 
 
-/* FEATURES - DESCRIPTION*/
+/* FEATURES - DESCRIÇÃO*/
 
 #features{
-  width: 100%;
-  height: auto;
+  width: 100%; /* Largura total */
+  height: auto; /* Altura automática */
 
-  margin-top: 30vh;
-  margin-bottom: 30vh;
+  margin-top: 30vh; /* Espaço superior */
+  margin-bottom: 30vh; /* Espaço inferior */
 }
 
 /*features - Mockups LEFT*/
 .features_mockups {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: flex; /* Usa Flexbox */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: flex-start; /* Alinha à esquerda */
 }
 
 .features_description{
-  background-color: white;
-  border-radius: 30px;
-  padding: 40px 0vh 40px 46vh;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  width: 40%;
+  background-color: white; /* Fundo branco */
+  border-radius: 30px; /* Bordas arredondadas */
+  padding: 40px 0vh 40px 46vh; /* Espaçamento interno */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  width: 40%; /* Largura de 40% */
 
-  margin-left: 2vh;
+  margin-left: 2vh; /* Espaço à esquerda */
 }
 
-.features_description img{
-  width: 5vh;
+.features_description img{ /* Tamanho da imagem */
+  width: 5vh; 
   height: 5vh;
 }
 
+/*Estilo das Caracteristicas da App - Titulo*/
 .features_description h1 {
-  font-size: 42px;
-  color:#FFCB66;
-  margin-top: 0;
-  margin-bottom: 15px;
+  font-size: 42px; /* Tamanho da fonte */
+  color:#FFCB66; /* Cor amarela */
+  margin-top: 0; /* Remove margem superior */
+  margin-bottom: 15px; /* Espaço inferior */
 
-  width: 100%;
+  width: 100%; /* Largura total */
 }
 
+/*Estilo das Caracteristicas da App - Descrição*/
 .features_description p {
   font-size: 16px;
   color: #161616;
@@ -540,50 +575,52 @@ nav ul li {
   width: 100%;
 }
 
-/*features2 - Mockups LEFT*/
+/*features2 - Mockups Direita*/
 .features_mockups2 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: flex; /* Usa Flexbox */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: flex-end; /* Alinha à direita */
 
-  margin-top: 30vh;
-  margin-bottom: 30vh;
-
+  margin-top: 30vh; /* Espaço superior */
+  margin-bottom: 30vh; /* Espaço inferior */
 }
 
 .features_description2 img{
   width: 5vh;
   height: 5vh;
 }
+
 .features_description2{
-  background-color: white;
-  border-radius: 30px;
-  padding: 40px 60vh 40px 0px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  width: 40%;
+  background-color: white; /* Fundo branco */
+  border-radius: 30px; /* Bordas arredondadas */
+  padding: 40px 60vh 40px 0px; /* Espaçamento interno */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  width: 40%; /* Largura de 40% */
 
-  margin-right: 3vh;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-end;
-  align-items: flex-end;
-  justify-content: flex-end;
+  margin-right: 3vh; /* Espaço à direita */
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Direção em coluna */
+  align-content: flex-end; /* Alinha conteúdo à direita */
+  align-items: flex-end; /* Alinha itens à direita */
+  justify-content: flex-end; /* Alinha conteúdo no final */
 
-  font-size: 16px;
-  color: #161616;
-  line-height: 1.6;
+  font-size: 16px; /* Tamanho da fonte */
+  color: #161616; /* Cor escura */
+  line-height: 1.6; /* Espaçamento entre linhas */
 }
 
+/*Estilo2 das Caracteristicas da App - Titulo*/
 .features_description2 h1 {
   font-size: 42px;
   color:#FFCB66;
-  margin-top: 0;
+  margin-top: 0; /* Remove margem superior */
   margin-bottom: 15px;
-  text-align: right;
+  text-align: right; /* Alinha texto à direita */
 
   width: 100%;
 }
 
+/*Estilo2 das Caracteristicas da App - Descrição*/
 .features_description2 p {
   font-size: 16px;
   color: #161616;
@@ -593,39 +630,36 @@ nav ul li {
   width: 100%;
 }
 
-
-
-/*MOCKUP- IPHONE*/
+/*ESTILO MOCKUP- IPHONE*/
 .phone-features{
-  position: absolute;
+  position: absolute; /* Posição absoluta no layout */
 }
 
 .phone-features img {
-  height: 80vh;
-  object-fit: contain;
+  height: 80vh; /* Altura de 80% da viewport */
+  object-fit: contain; /* Imagem mantém proporção dentro do espaço */
 }
 
 /*Tags - Descrição*/
 .features_tags {
-  margin-top: 20px;
+  margin-top: 20px; /* Margem acima */
 }
 
 .features_tags span {
-  border: 2px solid #FFCB66;
-  color: #FFCB66;
-  padding: 6px 12px;
-  border-radius: 10px;
-  font-size: 14px;
+  border: 2px solid #FFCB66; /* Borda amarela */
+  color: #FFCB66; /* Texto amarelo */
+  padding: 6px 12px; /* Espaçamento interno */
+  border-radius: 10px; /* Cantos arredondados */
+  font-size: 14px; /* Tamanho da fonte */
 }
-
 
 /*TIPOGRAFIA - SECTION*/
 .typeface_project {
-  display: flex;
-  flex-direction: column;
-  gap: 3vh;
+  display: flex; /* Flexbox */
+  flex-direction: column; /* Direção vertical */
+  gap: 3vh; /* Espaçamento entre elementos */
 
-  margin-bottom: 6vh;
+  margin-bottom: 6vh; /* Espaço inferior */
 }
 
 .typeface {
@@ -635,24 +669,24 @@ nav ul li {
 }
 
 .left {
-  width: 60%;
+  width: 60%; /* Largura do bloco da esquerda */
 }
 
 .right {
-  width: 40%;
+  width: 40%; /* Largura do bloco da direita */
   text-align: center;
   padding: 40px 20px;
   border-radius: 5px;
 }
 .yellow-bg {
-  background-color: #FFCB66;
+  background-color: #FFCB66; /* Fundo amarelo */
 }
 .black-bg {
-  background-color: #111;
+  background-color: #111; /* Fundo Preto */
 }
 
 .typeface_project h1 {
-  font-size: 48px;
+  font-size: 48px; /* Tamanho do título H1 */
   margin: 20px 0 10px;
   line-height: 1.2;
 }
@@ -662,15 +696,16 @@ nav ul li {
   margin: 0;
 }
 
+/*Estilo Base dos Icons das Caracteristicas App*/
 .symbols {
   font-size: 24px;
   margin-top: 10px;
 }
 
 
-/*Wireframes*/
+/* Estilo da grelha dos Wireframes + Etiquetas Gerais*/
 .description_tags{
-  gap: 2vh;
+  gap: 2vh; /* Espaçamento entre tags */
   display: flex;
   align-items: center;
 }
@@ -685,57 +720,55 @@ nav ul li {
 
 .wireframes{
   margin-top: 6vh;
-  gap: 2vh;
-
+  gap: 2vh; /* Espaçamento entre os itens */
 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: wrap; /* Permite quebra de linha */
+  justify-content: space-between; /* Espaço entre os itens */
 }
+
 .wireframes img {
-  height: 60vh;
-  object-fit: contain;
+  height: 60vh;  /* Altura das imagens de wireframe */
+  object-fit: contain; /* Mantém a proporção da imagem */
 }
 
 
-/* PRIMAVERA LONGA - PROJETO 02*/
-
-/* Banner Tumbnail - PRIMAVERA LONGA */
-
-
+/* ------ PRIMAVERA LONGA - PROJETO 02  ------ */
+/* Secção com texto sobre o projeto */
 #project2-about {
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
+  padding: 2rem; /* Espaçamento interno de 2rem */
 
+  display: flex;
+  justify-content: space-between; /* Espaço distribuído entre os elementos filhos */
 }
 
 #project2-about h2{
   color: #F2D793;
 }
 
+/* CAPA DO PROJETO - PRIMAVERA LONGA */
 #banner-2 {
   width: 100%;
   height: 70vh;
   
   background-image: url('projects/project2/medias/primaveraLonga_banner.jpg');
-  background-size: cover;
+  background-size: cover; /* Faz a imagem cobrir toda a área do banner */
   background-position: center;
 }
 
 #banner_logo{
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total do container pai */
 
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  align-content: flex-start;
+  display: flex; /* Flexbox para disposição dos elementos */
+  flex-direction: row; /* Organiza os elementos em linha */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  flex-wrap: wrap; /* Permite que quebrem para a próxima linha */
+  align-content: flex-start; /* Alinha o conteúdo no topo do container */
 
-  column-gap: 2%;
-  row-gap: 4%;
+  column-gap: 2%; /* Espaço entre colunas */
+  row-gap: 4%; /* Espaço entre linhas */
 }
 
 #logo-1{
@@ -748,42 +781,39 @@ nav ul li {
 }
 
 /*---POSTERS---*/
-
-
 #section-title{
   padding: 2rem;
 }
 
 #banner_posters{
-  width: 100%;
-  height: 90%;
+  width: 100%; /* Largura total */
+  height: 90%; /* Altura relativa ao container pai */
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
+  display: flex; /* Layout flexível */
+  flex-direction: row; /* Elementos em linha */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  flex-wrap: wrap; /* Permite quebra de linha */
+  align-content: center; /* Centraliza o conteúdo */
 
-  column-gap: 2%;
-  row-gap: 4%;
-  
+  column-gap: 2%; /* Espaçamento entre colunas */
+  row-gap: 4%; /* Espaçamento entre linhas */
 }
 
 .poster-1{
-  width: 34%;
-  height: 90vh;
+  width: 34%; /* Ocupa 34% da largura */
+  height: 90vh; /* Altura de 90% da viewport */
   
   background-image: url('projects/project2/medias/primaveralonga_poster01.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right center;
+  background-size: contain; /* A imagem se ajusta ao container mantendo proporção */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: right center; /* Alinha à direita e centraliza verticalmente */
 
   border-radius: 20px;
 }
 
-.poster-2{
-  width: 34%;
+.poster-2{ /* Segundo pôster */
+  width: 34%; /* Igual ao pôster 1 */
   height: 90vh;
 
   background-image: url('projects/project2/medias/primaveralonga_poster02.jpg');
@@ -794,21 +824,19 @@ nav ul li {
 }
 
 .section-posts{
-  margin-top: 6vh;
-  gap: 2vh;
+  margin-top: 6vh; /* Margem superior */
+  gap: 2vh; /* Espaço entre os elementos */
 
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: flex; /* Layout em Flexbox */
+  flex-wrap: wrap; /* Permite quebras de linha */
+  justify-content: space-between; /* Espaço entre os elementos */
 }
 .section-posts img {
-  height: 58vh;
-  object-fit: contain;
+  height: 58vh; /* Altura proporcional à tela */
+  object-fit: contain; 
 }
 
-/*VIDEOS */
-
+/*ESTILO BASE PARA OS VIDEOS */
 .section-stories{
   margin-top: 6vh;
   gap: 2vh;
@@ -820,30 +848,31 @@ nav ul li {
 }
 
 .section-stories video {
-  height: 100vh;
-  object-fit: contain;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  object-fit: contain; /* Ajuste proporcional do vídeo */
 }
-
 
 .section-teaser video{
   width: 100%;
   height: 100vh;
   object-fit: contain;
   margin-top: 2rem;
-
 }
 
-/*-------PROJECT2- WATERBOMB--------*/
+/*-------PROJECT 03 - WATERBOMB--------*/
+/* Secção com texto sobre o projeto */
 #project3-about {
   padding: 2rem;
   display: flex;
   justify-content: space-between;
 }
 
+/* Título da seção com cor verde */
 #project3-about h2 {
   color: #05c814;
 }
 
+/* CAPA do projeto */
 #banner-3 {
   width: 100%;
   height: 70vh;
@@ -858,12 +887,12 @@ nav ul li {
   height: 100vh;
   
   background-image: url('projects/project3/medias/ABOUT_WATERBOMB.jpg');
-  background-size: contain;
+  background-size: contain; /* Ajusta imagem mantendo proporção */
   background-position: center;
-  background-repeat: no-repeat;
-
+  background-repeat: no-repeat; /* Não repete a imagem */
 }
 
+/* Poster em realidade aumentada */
 .posterAR-1{
   width: 34%;
   height: 90vh;
@@ -876,13 +905,18 @@ nav ul li {
   border-radius: 20px;
 }
 
+/* Espaçamento acima da tipografia */
 #typo{
   margin-top: 10vh;
 }
+
+/* Fundo com gradiente verde para Secção Tipografica */
 .green-bg {
   background: #05C814;
   background: linear-gradient(0deg, rgba(5, 200, 20, 1) 0%, rgba(249, 251, 3, 1) 100%);
 }
+
+/* Fundo com gradiente invertido (amarelo para verde) */
 .gradient-bg {
   background: #F9FB03;
   background: linear-gradient(0deg,rgba(249, 251, 3, 1) 0%, rgba(5, 200, 20, 1) 100%);
@@ -911,6 +945,7 @@ nav ul li {
   background-position: center;
 }
 
+/* Secção com texto sobre o projeto */
 #project4-about{
   padding: 2rem;
   display: flex;
@@ -919,27 +954,33 @@ nav ul li {
 #project4-about h2{
   color: #C91668;
 }
+
+/* Classe aplicada a banners de sites com bordas arredondadas */
 .banner-website{
   border-radius: 20px;
   height: 100%;
 }
+/* Comparação entre site antigo e novo */
 #mockup-old-new{
   display: flex;
-  align-items: top;
-  margin: 3vh;
+  align-items: top; /*Centrado a cima*/
+  margin: 3vh;  /* Margem Geral */
 
-  gap: 2rem;
+  gap: 2rem; /* Espaçamento entre os mockups */
 }
 
+/* Mockup do site antigo */
 #old-website{
-  width: 100%;
+  width: 100%; /* Largura total */
   height: 60vh;
   
   background-image: url('projects/project4/medias/momondo_old.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-size: contain; /* Mantém proporção da imagem */
+  background-position: center; /*Centrada ao centro*/
+  background-repeat: no-repeat; /* Evita repetição da imagem */
 }
+
+/* Mockup do site Redesign */
 #new-website{
   width: 100%;
   height: 51vh;
@@ -953,13 +994,16 @@ nav ul li {
   background-position: top;
 }
 
+/* Descrição do site */
 .description_website{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* Espaçamento igual entre os itens */
   align-items: center;
 
   gap: 2vh;
 }
+
+/* Descrição com elementos lado a lado */
 .description_Redesign{
   display: flex;
   align-items: center;
@@ -968,18 +1012,19 @@ nav ul li {
   margin-bottom: 3vh;  
 }
 
+/* Secção dos icones */
 .icons{
-width: 100%;
+  width: 100%;
 
-display: flex;
-justify-content: center;
-gap: 6vh;
-margin-bottom: 6vh;
+  display: flex;
+  justify-content: center;
+  gap: 6vh;
+  margin-bottom: 6vh;
 }
 
 .icons img{
   height: 40vh;
-  object-fit: contain;
+  object-fit: contain; /* Mantém proporção da imagem */
 }
 
 .description_img{
@@ -990,13 +1035,14 @@ margin-bottom: 6vh;
   gap: 2vh;;
 }
 
+/* Familia de Pictogramas do projeto */
 #icons-fam{
   width: 100%;
   height: 100vh;
   margin-top: 2vh;
   
   background-image: url('projects/project4/medias/momondo_famicon.png');
-  background-size: contain;
+  background-size: contain; /* Mantém proporção da imagem */
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1021,29 +1067,29 @@ margin-bottom: 6vh;
 
 /*---------------ABOUT-----------------*/
 
-
-/* PROFILE SECTION */
+/*/* Container principal da secção de perfil */
 
 #profile {
-  height: 90vh;
+  height: 90vh; /* Altura da seção (90% da altura da viewport) */
 
-  background-image: url("REF/pic.png");
-  background-position: right center;
+  background-image: url("REF/pic.png"); /* Ilustração de fundo */
+  background-position: right center; /* Posiciona a imagem à direita e centralizada verticalmente */
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 40%; /* Redimensiona imagem para ocupar 40% da largura */
 
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Alinha os elementos em coluna verticalmente */
   justify-content: center;
 }
 
-#profile h1 {
-  font-family:"Lostar";
+/* Estilo do título principal - CARINA */
+#profile h1 { 
+  font-family:"Lostar"; /* Fonte personalizada */
   color: #58d0c5;
-  opacity: 0.4;
-
+  opacity: 0.4; /* Deixa o texto mais translúcido */
   font-size: 8rem;
 }
+/* Subtítulo */
 #profile h2 {
   font-size: 2.5rem;
 }
@@ -1053,25 +1099,27 @@ margin-bottom: 6vh;
   margin-top: 2px;
 }
 
+/* Secção "sobre mim" */
 #about {
   margin-top: 100px;
 
 
   background-image: url("REF/profile.png") ;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 20vh center;
+  background-size: contain; /* Mantém proporção da imagem */
+  background-position: 20vh center; /* Ajuste de posição lateral e centralização vertical */
 }
 
+/* Estilo - Localização*/
 .local {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Alinha à direita */
   align-items: center;
   font-size: 1em;
   margin-bottom: 20px;
 
-  text-transform: uppercase;
+  text-transform: uppercase; /* Texto em maiúsculas */
 }
 
 .local h4{
@@ -1079,26 +1127,29 @@ margin-bottom: 6vh;
 
 }
 
-
+/* Parte direita da seção  - Sobre Mim*/
 .about-right {
-  flex: 1;
-  min-width: 300px;
+  flex: 1; /* Ocupa espaço restante */
+  min-width: 300px; /* Largura mínima */
 }
 
+/* Container dos ícones de redes sociais */
 .socials-container {
   display: flex;
   justify-content: center;
-  gap: 4vh;
+  gap: 4vh; /* Espaço entre ícones */
   margin-top: 30px;
 
   width: 50%;
   height: 50%;
-  margin-left: 50%;
+  margin-left: 50%; /* Alinha para o lado direito */
 }
+/* Estilo das imagens dos links sociais */
 #about a img {
   height: 40px; 
 }
 
+/* Texto descritivo sobre mim */
 .about-me_text{
   width: 50%;
   height: 50%;
@@ -1108,22 +1159,22 @@ margin-bottom: 6vh;
   margin-top: 20px;
 }
 
-/* BUTTONS */
-
+/* BOTÕES */
 .btn-container {
   display: flex;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 1rem; /* Espaçamento entre botões */
 
   margin-top: 50px;
   margin-bottom: 5%;
 }
 
+/* Estilo base dos botões */
 .btn {
   font-weight: 600;
-  transition: all 300ms ease;
+  transition: all 300ms ease; /* Transição suave */
   padding: 1rem;
-  border-radius: 20px;
+  border-radius: 20px;  /* Cantos arredondados */
 }
 
 .btn-color-1,
@@ -1132,46 +1183,50 @@ margin-bottom: 6vh;
   color: whitesmoke;
 }
 
+/* Aponta que os botões são clicáveis ao passar o cursor */
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
 }
 
+/* Estilo ao passar o cursor: fundo escuro, texto branco */
 .btn-color-1,
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: whitesmoke;
 }
 
+/* Estilo de hover específico para o botão 1 */
 .btn-color-1:hover {
   background: rgb(0, 0, 0);
 }
 
+/* Botão 2 sem fundo inicialmente */
 .btn-color-2 {
   background: none;
 }
 
+/* Estilo de hover do botão 2: borda branca */
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
+/* Reforço de espaçamento entre botões */
 .btn-container {
   gap: 1rem;
 }
 
+/* Container da imagem "sobre mim" */
 .about-me_pic{  
-  display: flex;
   height: 400px;
   width: 400px;
-  margin: auto 0;
+  margin: auto 0; /* Centraliza verticalmente */
 
-  justify-content: flex-end;
-
+  display: flex;
+  justify-content: flex-end; /* Alinha à direita */
 }
 
-
-/*ABOUT ME - TOOLBOX*/
-
+/*SOBRE MIM - TOOLBOX / Ferramentas / Programas*/
 .tools{
   width: 100%;
   height: 20vh;
@@ -1181,6 +1236,7 @@ margin-bottom: 6vh;
   align-items: center;
 }
 
+/* Container dos ícones */
 .icons-tolls{
 width: 100%;
 
@@ -1190,16 +1246,17 @@ gap: 6vh;
 margin-bottom: 6vh;
 }
 
-.icons-tolls img{
+.icons-tolls img{ /* Ajuste das imagens */
   object-fit: contain;
 }
 
 
-/*ABOUT ME - EXPERIENCE*/
+/*SOBRE MIM - EXPERIENCIA*/
 .cv-container h2{
   width: 100%;
   margin-bottom: 20px;
 }
+/* Descrição geral (cargo + período) */
 .description{
   display: flex;
   justify-content: space-between;
@@ -1207,6 +1264,7 @@ margin-bottom: 6vh;
   margin-bottom: 20px;
 }
 
+/* Container das skills */
 .skills{
   display: flex;
   flex-direction: row;
@@ -1226,15 +1284,16 @@ margin-bottom: 6vh;
   width: 20%;
 }
 
+/* Linha divisória entre seções */
 .skills hr{
  color: #58d0c5;
 }
 
+/* Itens da lista de skills */
 .skills ul li{
   list-style-type: none;
   margin-top: 0.5rem;
 }
-
 
 
 /* FOOTER SECTION */
@@ -1381,6 +1440,7 @@ nav ul li {
 #card-1, #card-2{
   flex-basis: 49%;
 }
+/*ALTERAÇÃO DAS IMAGENS PARA AS VERSÕES MOBILE*/
 #card-1{
   background-image: url('projects/project1/medias/bunssy_coverMobile.jpg');
   background-size: cover;
