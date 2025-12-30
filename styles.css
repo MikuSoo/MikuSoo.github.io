@@ -1340,7 +1340,7 @@ footer {
   }
 }
 
-
+/*FAZER UM @media (max-width: 440px)*/
 @media only screen and (max-width: 767px){
 /*NAV BAR */
 nav{
